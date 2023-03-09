@@ -1,0 +1,258 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    direction: rtl;
+}
+
+ header
+{
+    /* display: flex; */
+    /* width: 100%; */
+    height: 100vh;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background: #cecece; */
+    /* overflow: hidden; */
+    /* background: linear-gradient(#654EA3, #EAAFC8); */
+    /* background: #020102; */
+    background-image: url(../images/new.jpg);
+    background-position: center center;
+    background-size: cover;
+} 
+marquee
+{
+    margin-bottom: 300px;
+}
+navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    /* height: 100vh; */
+    overflow: hidden;
+}
+nav
+{
+    position: relative;
+    min-width: 350px;
+    min-height: 80px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border-radius: 10px;
+    padding: 0 15px;
+    background: #000;
+    box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.12), 0 22.3px 17.9px rgba(0, 0, 0, 0.08), 0 100px 80px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    color: #fff;
+    /* background-color: rgba(255,255,255,0.3); */
+}
+nav ul
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li
+{
+    list-style-type: none;
+}
+nav ul li a 
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 20px;
+}
+nav ul li a i
+{
+    color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: opacity 100ms ease;
+}
+nav ul li a.active i
+{
+    opacity: 1;
+}
+nav .tubelight
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+    transition: left 400ms ease;
+    z-index: 10;
+}
+nav .light-ray
+{
+    position: absolute;
+    left: -30%;
+    top: 5px;
+    width: 160%;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3) -50%, rgba(255,255,255,0) 90%);
+    clip-path: polygon(5% 100%, 25% 0px, 75% 0px 95% 100%);
+    pointer-events: none;
+}
+h1
+{
+    color: #d7a825ec;
+}
+
+#about img
+{
+    width: 7%;
+}
+
+.bg
+{
+    width: 100%;
+    background-color: rgba(255, 252, 127, 0.3);
+    padding: 10px 0;
+}
+
+#btn
+{
+    width: 20px;
+    height: 20px;
+    border: none;
+    color: #5F236B;
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    display: none;
+}
+
+.contents
+{
+    /* border: 3px solid #5F236B; */
+    background-color: rgba(255, 252, 127, 0.3) !important;
+    color: #fff !important;
+    cursor: pointer;
+}
+.shape
+{
+    transition: transform 0.5s;
+}
+.parent:hover .shape
+{
+    transform: scale(1.1);
+    color: #fff !important;
+}
+.parent:hover h3
+{
+    color: #fff !important;
+}
+.item
+{
+    cursor: pointer;
+    
+}
+#lightbox-container
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox-item
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/pexels-baskin-creative-studios-1766838.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#lightbox-item i
+{
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+
+ .content h1
+{
+    /* font-family: 'Lobster', cursive; */
+}
+
+.contents h3
+{
+    font-family: 'Shantell Sans', cursive;
+}
+
+#contact
+{
+    background-color: rgba(255, 252, 127, 0.3);
+}
+#contact i
+{
+    color: #fff !important;
+    transition: color 0.5s;
+}
+#contact i:hover
+{
+   color: #fff !important;
+}
+#contact p
+{
+    font-weight: 600;
+  font-size: 2em;
+}
+
+strong
+{
+    color: #5F236B;
+}
+#about p
+{
+    font-family: 'Dancing Script', cursive;
+
+}
+
+
+
+html::-webkit-scrollbar{
+    width: 1rem;
+  }
+  html::-webkit-scrollbar-track{
+    background: #000;
+  }
+  html::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(144,112,42), rgb(208, 170, 77));
+    border-radius: 10px;
+  }
+
+  body
+  {
+    background-color: black;
+  }
+  @media only screen and (max-width: 600px) {
+    marquee
+    {
+        margin-bottom: 150px;
+    }
+  }
